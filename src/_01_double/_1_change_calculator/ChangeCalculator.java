@@ -12,20 +12,20 @@ public class ChangeCalculator {
 	public static void main(String[] args) {
 
 		// Ask the user how many nickels they have
-		String n = JOptionPane.showInputDialog(null, "how many pennies do you have");
-		int x = Integer.parseInt(n);
-		int y = (int) (x*0.01);
-		String a = JOptionPane.showInputDialog(null, "how many nickels do you have");
-		int b = Integer.parseInt(a);
-		int c = (int) (b*0.05);
-		String h = JOptionPane.showInputDialog(null, "how many dimes do you have");
-		int g = Integer.parseInt(h);
-		int l = (int) (g*0.05);
-		String v = JOptionPane.showInputDialog(null, "how many quarters do you have");
-		int s = Integer.parseInt(v);
-		int m = (int) (s*0.05);
-
-		System.out.println(y + c + l + m);
+		String penniesAnswer = JOptionPane.showInputDialog(null, "how many pennies do you have");
+		int pennies = Integer.parseInt(penniesAnswer);
+		double penniesValue = (pennies*0.01);
+		String nickelAnswer = JOptionPane.showInputDialog(null, "how many nickels do you have");
+		int nickels = Integer.parseInt(nickelAnswer);
+		double nickelsValue = (nickels*0.05);
+		String dimesAnswer = JOptionPane.showInputDialog(null, "how many dimes do you have");
+		int dimes = Integer.parseInt(dimesAnswer);
+		double dimesValue = (dimes*0.1);
+		String quartersAnswers = JOptionPane.showInputDialog(null, "how many quarters do you have");
+		int quarters = Integer.parseInt(quartersAnswers);
+		double quartersValue = (quarters*0.25);
+		double total = (penniesValue + dimesValue + nickelsValue + quartersValue);
+		System.out.println(total);
 		
 		// Convert their answer to an int.   Hint: Integer.parseInt()  
 		
