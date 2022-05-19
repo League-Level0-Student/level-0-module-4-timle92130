@@ -24,6 +24,15 @@ public class RedSquare {
 		if(isRed && isSquare) {
 			drawRedSquare();
 		}
+		else if (isRed == false && isSquare == true ) {
+			drawBlueSquare();
+		}
+		else if (isRed == true && isSquare == false) {
+			drawRedTriangle();
+		}
+		else if (isRed == false && isSquare == false) {
+			drawBlueTriangle();
+		}
 		else {
             JOptionPane.showMessageDialog(null, "No shape was drawn!");
         }
@@ -50,7 +59,9 @@ public class RedSquare {
 		// Much like the "and" operator, the "or" operator || can be used to 
 		// combine two boolean statements. However the statement becomes true
 		// if either boolean is true rather than only if both are true.
-		
+		if (drewRedSquare == true || drewBlueSquare == true) {
+			System.out.println("you drew a square");
+		}
 		// 7. Write an if statement using the static booleans at the top of 
 		//    the program. If drewRedSquare OR drewBlueSquare are true, then
 		//    tell the user they drew a square in a pop-up. Hint: ||

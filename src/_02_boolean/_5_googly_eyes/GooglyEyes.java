@@ -12,7 +12,7 @@ import processing.core.PImage;
  * 
  * 2. Declare a variable for the image:
  *    PImage face;
- * 
+ 
  * 3. In your setup() method, import your image using the following code:
  *    face = loadImage("face.jpg");
  * 
@@ -36,11 +36,14 @@ import processing.core.PImage;
  *    within. When mouseX and mouseY goes outside of these bounds, set it back
  *    to the boundary. Put this code before you draw the pupils.
  */
+
 public class GooglyEyes extends PApplet {
+	
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
     
     PImage face;
+    
     
     @Override
     public void settings() {
@@ -49,12 +52,14 @@ public class GooglyEyes extends PApplet {
     
     @Override
     public void setup() {
+    	face = loadImage("eyes.jpeg");
+    	face.resize(WIDTH,HEIGHT);
 
     }
 
     @Override
     public void draw() {
-
+    	background(face);
     }
 
     static public void main(String[] args) {
