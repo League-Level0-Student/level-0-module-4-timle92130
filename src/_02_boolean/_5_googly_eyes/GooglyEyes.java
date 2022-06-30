@@ -66,8 +66,8 @@ public class GooglyEyes extends PApplet {
     	ellipse(348,262,60,60);
     	ellipse(476,262,60,60);
     	fill(000);
-    	ellipse(348,262,30,30);
-    	
+
+  
     	System.out.println(mouseX);
     	System.out.println(mouseY);
     	
@@ -84,6 +84,7 @@ public class GooglyEyes extends PApplet {
         	y=247;
         	}
     	ellipse(x,y,30,30);
+    	ellipse(x-130,y,30,30);
     }
 
     static public void main(String[] args) {
