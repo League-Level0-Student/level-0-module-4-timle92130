@@ -13,8 +13,11 @@ public class StringMethods {
 		
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
+		int x = bob.length();
 		System.out.println(	bob.length());
-		
+		for (int i =0; i<x; i++) {
+			System.out.println(bob.charAt(i));
+		}
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
 
